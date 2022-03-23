@@ -1,6 +1,337 @@
-.menucontainer {
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-  }
+.app-aside-fix #aside {
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+.app-aside {
+    float: left;
+    width: 220px;
+}
+.app-aside-fix .app-aside:before {
+  display: none;
+}
+.app-aside:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: inherit;
+    background-color: inherit;
+    border: none;
+    content: "";
+    overflow: hidden;
+}
+.bg-white {
+    background-color: #f9f9f9;
+    color: #777;
+}
+/* aside-wrap */
+.app-aside-fix .aside-wrap {
+  height: 100%;
+  /* overflow: hidden; */
+  overflow: auto;
+}
+/* navi-wrap */
+/* 设置左边的滚动条 */
+aside.app-aside .aside-wrap .scroll-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* scroll-behavior: auto; */
+}
+/* .scroll-x, .scroll-y {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+} */
+.app-aside-fix .aside-wrap::-webkit-scrollbar {
+  display: none;
+}
+/* clearfix text-center */
+.show {
+  visibility: visible;
+}
+/* dropdown wrapper */
+.wrapper {
+  padding: 15px;
+}
+.vertical-wrapper {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* 作者图片部分 */
+.thumb-lg {
+  display: inline-block;
+  width: 96px;
+}
+.m-t-sm {
+  margin-top: 10px;
+}
+.vertical-avatar {
+  float: left;
+}
+.avatar {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  border-radius: 500px;
+}
+.thumb img, .thumb-btn img, .thumb-lg img, .thumb-md img, .thumb-sm img, .thumb-xs img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.vertical-avatar img {
+  width: 60px;
+  height: auto;
+}
+.normal-shadow {
+  box-shadow: 2px 2px 3px #e1e1e1;
+}
+img {
+  max-width: 100%!important;
+}
+/* 作者名字部分 */
+.vertical-flex {
+  display: flex!important;
+  align-items: center;
+}
+.clear {
+  display: block;
+  overflow: hidden;
+}
+.block {
+  display: block;
+}
+.m-t-sm {
+  margin-top: 10px;
+}
+.font-bold {
+  font-weight: 700;
+}
+.bg-white .text-muted {
+  color: #98a6ad!important;
+}
+.text-xs {
+  font-size: 12px;
+}
+/* 点击三角出现提示框 */
+.w {
+  width: 200px;
+}
+.no-padder {
+  padding: 0!important;
+}
+.dropdown-menu {
+  border: none!important;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+}
+@keyframes
+fadeInRight{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(100%,0,0);
+    transform:translate3d(100%,0,0)
+   }
+    100%{
+      opacity:1;
+      -webkit-transform:none;
+      transform:none
+    }
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.arrow.top.arrow-info:after {
+  border-bottom-color: #23b7e5;
+}
+.bg-info .progress-xs.dker {
+  background-color: #1199c4;
+}
+.aside-wrap .open>.dropdown-menu {
+  left: 50%;
+  margin-left: -100px;
+}
+.b-b {
+  border-bottom: 1px solid rgba(222,229,231,.45);
+}
+.m-n {
+  margin: 0!important;
+}
+.bg-info {
+  color: #dcf2f8;
+  background-color: #23b7e5;
+}
+.m-b-none {
+  margin-bottom: 0!important;
+}
+.progress, .progress-bar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.progress-xs {
+  height: 6px;
+}
+.arrow.top {
+  top: -9px;
+  left: 50%;
+  margin-left: -9px;
+  border-bottom-color: rgba(0,0,0,.1);
+  border-top-width: 0;
+}
+.arrow, .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.arrow {
+  z-index: 0;
+  border-width: 9px;
+}
+.arrow.top.arrow-info:after {
+  border-bottom-color: #23b7e5;
+}
+.arrow.top:after {
+  top: 1px;
+  margin-left: -8px;
+  border-bottom-color: #fff;
+  border-top-width: 0;
+}
+.arrow:after {
+  border-width: 8px;
+  content: "";
+}
+
+/* navi */
+:not(.app-aside-dock).app-aside-fix .aside-wrap .navi-wrap .navi {
+  padding-bottom: 100px;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+/* index */
+.aside-wrap .line {
+  height: 1px!important;
+}
+.bg-white .dk, .bg-white .dker, .bg-white .lt, .bg-white .lter {
+  background-color: #fff;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
+  overflow: hidden;
+  font-size: 0;
+}
+/* nav ul li */
+.navi ul.nav li {
+  position: relative;
+  display: block;
+}
+.text-xs {
+  font-size: 12px;
+}
+.m-b-sm {
+  margin-bottom: 10px;
+}
+.m-t {
+  margin-top: 15px;
+}
+/* 主页 */
+.navi ul.nav li a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-transform: none;
+  -webkit-transition: background-color .2s ease-in-out 0s;
+  transition: background-color .2s ease-in-out 0s;
+}
+.navi ul.nav li a span {
+  opacity: .9;
+}
+.nav-icon {
+  position: relative;
+  float: left;
+  width: 40px;
+  margin: -10px -10px;
+  margin-right: 5px;
+  overflow: hidden;
+  line-height: 40px;
+  text-align: center;
+}
+.nav-icon svg {
+  vertical-align: -2px;
+}
+/* 分类部分三角形 */
+.active>.auto .text, .active>.text, .text-active {
+  display: none!important;
+}
+.navi-wrap nav li i {
+  font-size: 14px;
+}
+.icon-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+.text {
+  color: #777;
+}
+.active>.auto .text-active, .active>.text-active {
+  display: inline-block!important;
+}
+.fontello-angle-right:before {
+  content: '\f105';
+}
+.fontello-angle-down:before {
+  content: '\f107';
+}
+/* 分类下面默认展开的框 */
+.bg-white .dk, .bg-white .dker, .bg-white .lt, .bg-white .lter {
+  background-color: #fff;
+}
+.active>.nav-sub, .app-aside-folded li:active>.nav-sub, .app-aside-folded li:focus>.nav-sub {
+  height: auto;
+  margin-left: 0;
+  overflow: auto;
+  opacity: 1;
+}
+.nav-sub-header {
+  display: none!important;
+}
+.navi ul.nav li a .badge, .navi ul.nav li a .label {
+  padding: 2px 5px;
+  margin-top: 2px;
+  font-size: 11px;
+}
+.navi ul.nav li li a {
+  padding-left: 55px;
+}
+.badge {
+  background-color: #cfdadd;
+}
+.badge, .label {
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 20%);
+}
+.nav-sub {
+  height: 0;
+  margin-left: -20px;
+  /* 默认隐藏的内容 */
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out 0s;
+  transition: all .2s ease-in-out 0s;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}

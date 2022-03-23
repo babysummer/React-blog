@@ -1,0 +1,16 @@
+{
+  "id": "3262030",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "397447",
+      "name": "icon-qzone",
+      "font_class": "qqkongjian",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    }
+  ]
+}

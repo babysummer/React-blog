@@ -1,0 +1,38 @@
+.settings {
+    position: fixed;
+    top: 165px;
+    right: -240px;
+    width: 240px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.settings>.btn {
+    top: 0;
+}
+.rightSettingBtn {
+    border: none;
+    box-shadow: -3px 0 2px 0 rgb(0 0 0 / 2%);
+    background: #f9f9f9!important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    left: -43px;
+    padding: 10px 15px;
+    position: absolute;
+}
+.settings-icon:not(.animate-spin) svg {
+    vertical-align: -2px;
+}
+.settings .panel-heading, .tag_toc_body .panel-heading {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-color: transparent!important;
+}
+.panel-default>.panel-heading {
+    color: #777;
+}
+.panel-default .panel-heading {
+    background-color: #f6f8f8;
+}
+.panel-heading {
+    cursor: pointer;
+}
